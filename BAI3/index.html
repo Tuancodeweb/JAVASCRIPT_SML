@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+<pre>
+        Viết Ứng dụng Search Box (Hộp Tìm kiếm) có Hiệu ứng Hidden Text và Visible Text
+        khi người dùng click trái chuột vào và click trái chuột ra.
+</pre>
+
+    <input id="inpit" type="text" name="text" value="" onclick="ClickMause();" placeholder="Nhập vào cái gì đó"/>
+    <button>TÌm kiếm</button>
+    <script>
+        function ClickMause(){
+            var timkiem = document.getElementById("inpit");
+            var layphantu = timkiem.placeholder;
+
+            if(layphantu != null){
+                timkiem.placeholder = '';
+            }
+        }
+    </script>
+    </body>
+</html>

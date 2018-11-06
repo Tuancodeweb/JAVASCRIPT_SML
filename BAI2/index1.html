@@ -1,0 +1,59 @@
+<!-- -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    </head>
+    <body>
+       <pre>
+            Áp dụng kiến thức về Mảng & Hàm để Xây dựng Hàm cho phép người dùng sử dụng để
+            đếm số phần tử có Key chẵn và số phần tử có Key lẻ của một mảng bất kỳ 
+       </pre>
+        <script>
+          var mang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20];
+ 
+
+            function dem_so_le(mang)
+            {
+              
+                var dem = 0;
+            
+               
+                for (var i = 0; i < mang.length; i++){
+                    if (mang[i] % 2 != 0){
+                        dem ++;
+                    }
+                }
+            
+               
+                return dem;
+            }
+
+            function dem_so_chan(mang)
+            {
+              
+                var dem = 0;
+            
+               
+                for (var i = 0; i < mang.length; i++){
+                    if (mang[i] % 2 == 0){
+                        dem ++;
+                    }
+                }
+            
+               
+                return dem;
+            }
+
+        
+            document.write("đếm số lẻ: " + dem_so_le(mang));
+            document.write("đếm số chẵn: " + dem_so_chan(mang));
+        </script>
+    </body>
+</html>

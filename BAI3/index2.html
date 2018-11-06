@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <pre>
+                Viết Ứng dụng máy tính đơn giản có các phép toán (Cộng, trừ, nhân, chia, khai căn, trị
+                tuyệt đối, làn tròn) cho Hai số bất kỳ mà người dùng nhập vào từ Form
+        </pre>
+            <table border="1">
+                <tr>
+                    <td colspan="2">BẢNG TÍNH ĐƠN GIẢN</td>
+                </tr>
+                <tr>
+                    <td>Nhập số thứ nhất</td>
+                    <td>
+                        <input type="text" name="" id="sothunhat" value="" onclick="resun.value += this.value">
+                    </td>
+                </tr>
+                <tr>
+                        <td>Nhập số thứ hai</td>
+                        <td>
+                         <input type="text" name="" id="sothuhai" value="" onclick="resun.value += this.value">
+                        </td>
+                </tr>
+                <tr>
+                        <td>Phép toán </td>
+                        <td>
+                            <input type="button" name="button" id="k1" value="+" onclick="resun.value += this.value">
+                            <input type="button" name="button" id="" value="-" onclick="resun.value += this.value">
+                            <input type="button" name="button" id="" value="*" onclick="resun.value += this.value">
+                            <input type="button" name="button" id="" value="/" onclick="resun.value += this.value">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                            <td>Phép toán khác</td>
+                            <td>
+                                <input type="button" name="button" id="rizz" value="√" onclick="resun.value  = eval(Math.sqrt(resun.value))">
+                                <input type="button" name="button" id="rizz1" value="abs()" onclick="resun.value = eval(Math.abs(resun.value))">
+                                <input type="button" name="button" id="rizz2" value="ceil()" onclick="resun.value = eval(Math.ceil(resun.value))">
+                                <input type="button" name="button"  value="=" onclick="resun.value  = eval(resun.value)">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                                <td>Kết quả</td>
+                                <td>
+                                    <input type="text" name="text" id="resun" value="" >
+                                   
+                                </td>
+                            </tr>
+            </table>
+           
+
+            
+    </body>
+</html>
